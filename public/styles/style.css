@@ -1,0 +1,193 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    
+    
+}
+
+/* -------------------------------------------------------------------------------------- */
+
+body{
+    background-color: #4040c1;
+}
+
+/* -------------------------------------------------------------------------------------- */
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+header .logo{
+    position: relative;
+    width: 150px;
+    height: 40px;
+    text-decoration: none ;   
+}
+
+
+/* -------------------------------------------------------------------------------------- */
+
+section{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 100px;
+}
+section .contentBx{
+    position: relative;
+    max-width: 700px;
+    z-index: 1000;
+}
+section .contentBx h2{
+    font-size: 60px;
+    color: white;
+    text-transform: uppercase;
+}
+section .contentBx p{
+    font-size: 18px;
+    color: white;
+}   
+section .contentBx .countdown{
+    display: flex;
+    margin: 20px 0;
+}
+section .contentBx .countdown .time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    margin-right: 20px;
+    font-size: 48px;
+    min-width: 110px;
+    font-weight: 700;
+    padding: 10px 5px 15px;
+    border-radius: 4px;
+    color: black;
+}
+section .contentBx .countdown .time span {
+    /* margin-top: -10px; */
+    font-size: 20px;
+    font-weight: 600;
+    color:black;
+}
+section .contentBx a{
+    font-weight: 550;
+    position: relative;
+    margin: 10px;
+    display: inline-block;
+    background: white;
+    color: black;
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: 15px 35px;
+    text-decoration: none;
+    border-radius: 40px;
+}
+section .imgBx img{
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    margin-top: 100px ;
+    z-index: 1;
+}
+
+/* -------------------------------------------------------------------------------------- */
+
+.wave{
+    position: absolute;
+    right:0;
+    bottom: 0;
+    pointer-events: none;
+}
+
+/* -------------------------------------------------------------------------------------- */
+
+section .sci{
+    position: absolute;
+    bottom: 40px;
+    left:100px;
+    z-index:1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+section .sci li{
+    list-style: none;
+}
+section .sci li a{
+    display: block;
+    margin-right: 20px;
+    transform: scale(0.8);
+
+}
+
+section ul li a i {
+    color:white;
+    font-size: 40px;
+}
+section ul li a i:hover{
+    color: black;
+}
+
+/* -------------------------------------------------------------------------------------- */
+
+/* mobile view */
+
+@media(max-width:1221px){
+    section{
+        flex-direction: column;
+        padding-top: 150px;
+        height:auto;
+    }
+    section .contentBx{
+        max-width:100%;
+    }
+    section .imgBx img{
+        margin-top:0;
+    }
+}
+
+@media(max-width:668px){
+     header{
+         padding: 20px 50px;
+     }
+     section{
+         flex-direction: column;
+         padding: 120px 50px 100px;
+         height: auto;
+     }
+     section .contentBx h2{
+         font-size: 40px;
+     }
+     section .contentBx p{
+         font-size: 16px;
+     }
+     section .contentBx .countdown .time{
+         font-size: 30px;
+         min-width:70px;
+         margin-right: 5px;
+     }
+     section .contentBx .countdown .time span{
+         font-size: 14px;
+     }
+     section .sci{
+        left:200px;
+     }
+}
+
+
+
